@@ -1,0 +1,17 @@
+@import 'mixin';
+@import 'varible';
+@import 'resposiv';
+@import 'home';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: PT Sans;
+}
+
+
+.my-content{
+    max-width: 1240px;
+    margin:  auto;
+}

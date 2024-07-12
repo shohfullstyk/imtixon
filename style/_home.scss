@@ -1,0 +1,995 @@
+.head{
+    width: 100%;
+    @include flex;
+    gap: 70px;
+    margin-top: 109px;
+    h2{
+        font-size: 52px;
+        font-weight: 600;
+        line-height: 65px;
+        text-align: left; 
+        color: $text2       
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 40px;
+        color: $text;
+    }
+    .d{
+        display: none;
+    }
+    .image{
+        img{
+            transition: all 0.5s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .hover-text{
+        width: 110px;
+        border-bottom: 1px solid #ffffff;
+        transition: all 0.4s;
+        .button{
+            // width: 105px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: left;        
+            margin-top: 40px;
+            display: block;
+            text-decoration: none;
+            color: $text2;
+        }
+        &:hover{
+            border-bottom: 1px solid #FFCE50;
+        }
+    }
+}
+.card-div{
+    width: 100%;
+    @include flex;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.075);
+    margin-top: 67px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 40px 0;
+    .ml{
+        .img-on{
+            padding: 21px 23px;
+        }
+    }
+    .card-on{
+        max-width: 333px;
+        display: block;
+        margin-left: 80px;
+        padding-right: 105px;
+        border-right: 1px solid #D7D7DD;
+        .img-on{
+            width: 92px;
+            height: 92px;
+            border-radius: 50%;
+            padding: 21px;            
+            background-color: $cardbg;
+            transition: all 0.5s;
+            &:hover{
+                background-color: #FFCE50;
+            }
+        }
+        h4{
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 27px;
+            text-align: left;
+            color: $text2;
+            margin-top: 24px;             
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: $text;
+            margin-top: 16px;   
+        }
+        .s{
+            padding: 27px 12px;
+        }
+        .w{
+            padding: 21px 23px;
+        }
+
+    }
+    .ml2{
+        border: none;
+    }
+}
+.bg-cards{
+    width: 100%;
+    margin-top: 67px;
+    .h2za{
+        display: none;
+    }
+    .bg-imgs{
+        background: url(../image/bgimg.png) no-repeat center center /cover;
+        margin-bottom: 0;
+        position: relative;
+        .h2cl{
+            max-width: 362px;
+            position: absolute;
+            font-family: Exo 2;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px;
+            text-align: left;            
+            color: white;
+            margin: 178px 90px;
+        }
+    }
+    .bg-c{
+        width: 100%;
+        @include flex;
+        margin-top: 72px;
+        padding: 0 66px;
+        .card-img-text{
+            max-width: 447px;
+            @include flex;
+            gap: 40px;
+        }
+        .img-c{
+            width: 80px;
+            height: 80px;
+            background-color: #D7D7DD;
+            border-radius: 50%;
+            padding: 14px 18px;
+        }
+        .mone{
+            padding: 18px;
+        }
+        h4{
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 27px;
+            text-align: left;    
+            color: $text2;        
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: $text;
+            margin-top: 16px;            
+        }
+        .top{
+            margin-top: 64px;
+        }
+        .g{
+            padding: 15px 18px;
+        }
+    }
+}
+.trak-card{
+    width: 100%;
+    .trak-title{
+        margin-top: 120px;
+        max-width: 607px;
+        h2{
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px;
+            text-align: left;
+            color: $text2;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: $text;
+            margin-top: 32px;
+        }
+    }
+    .trak-cards{
+        @include flex;
+        gap: 30px;
+        // max-width: 393px;
+        margin-top: 56px;
+        .trak-card-card {
+            max-width: 393px;
+            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.096);
+            border-radius: 10px;
+            transition: all 0.4s;
+            img{
+                width: 100%;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .tr{
+            display: none;
+        }
+        .title-h4{
+            padding: 24px 32px;
+        }
+        h4{
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 27px;
+            text-align: left;
+            color: $text2;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: $text;
+            margin-top: 16px;
+        }
+        .btn-trak{
+            max-width: 90px;
+            font-size: 16px;
+            font-weight: 600;
+            display: block;
+            text-decoration: none;
+            border-bottom: 2px solid white;
+            line-height: 21.6px;
+            text-align: center;
+            color: $text2;
+            margin-top: 32px;
+            padding-bottom: 5px;
+            transition: all 0.4s;
+            &:hover{
+                border-bottom: 2px solid $hover;
+            }
+        }
+    }    
+}
+.table-text{
+    width: 100%;
+    .table-texts{
+        margin-top: 212px;
+        padding: 85px 0;
+        width: 100%;
+        display: flex;
+        gap: 75px;
+        background-color: #0B7572;
+
+        h2{
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px;
+            text-align: left;
+            color: white;
+            margin-left: 81px;
+        }
+        .table{
+            background-color: white;
+            margin-right: 66px;
+            border-radius: 8px;
+            padding: 28px 40px;
+        }
+        .logo-nav{
+            gap: 194px;
+            border-bottom: 2px solid $cardbg;
+            @include flex;
+            padding-bottom: 32px;
+        }
+        .wp{
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 16.5px;
+            text-align: left;
+            color: $text;
+        }
+        ul{
+            @include flex;
+            background-color: #0B7572;
+            list-style: none;
+            border-radius: 5px 5px 0px 0px ;
+        }
+        li{
+            padding: 15px 45px;
+            border-right: 1px solid rgba(0, 0, 0, 0.219); 
+            transition: all 0.5;
+            &:hover{
+                background-color: white;
+            }
+        }
+        .link{
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+            color: white;
+        }
+        li:hover .link{
+            color: $text2;
+        }
+        .tb{
+            max-width: 652px;
+            padding: 0;
+            margin: 0;
+            tr{
+                border-bottom: 2px solid rgba(0, 0, 0, 0.199) ;
+                gap: 30px;
+                display: block;
+            }
+            td{
+                padding: 21px 16px;
+                border-right: 1px solid rgba(0, 0, 0, 0.199) ;
+            }
+        }
+        td p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18.9px;
+            text-align: left;
+            color: $text;
+            margin-top: 10px;
+        }
+        h4{
+            font-family: PT Sans;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 18.9px;
+            text-align: left;
+            color: $text2;
+        }
+        a{
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18.9px;
+            text-align: left;
+            color: $text2;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .pl{
+            max-width: 192px;
+            margin-top: 0;
+        }
+    }
+}
+.steps{
+    width: 100%;
+    padding-top: 120px;
+    .text-h2{
+        h2{
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px;
+            text-align: left;
+            color: $text2;
+        }
+    }
+    .steps-card{
+        padding-left: 49px;
+        margin-top: 48px;
+        display: block;
+    }
+    .card-st{
+        display: flex;
+        padding: 32px 96px;
+        gap: 56px;
+        border-radius: 10px;
+        margin-top: 24px;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.082);
+        h4{
+            max-width: 258px;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 25px;
+            text-align: left;
+            color: $text2;
+            padding-bottom: 24px;
+            border-bottom: 1px solid white;
+            transition: all 0.4s;
+            &:hover{
+                border-bottom: 1px solid $hover
+            }
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: $text;
+            margin-top: 24px;
+        }
+    }
+}
+.logo-log{
+    width: 100%;
+    h2{
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+        text-align: left;
+        color: $text2;
+        padding-bottom: 90px;
+    }
+    .logo-top{
+        @include flex;
+        padding-left: 46px;
+        padding-bottom: 71px;
+        h5{
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 27px;
+            text-align: center;
+            color: $text2;
+            margin-top: 32px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-align: center;
+            color: $text;
+            margin-top: 14px;
+        }
+        img{
+            display: block;
+            margin: auto;
+        }
+        .borterl{
+            padding-left: 60px;
+            border-left: 1px solid rgba(0, 0, 0, 0.183);
+        }
+        .h5{
+           margin-top: 80px; 
+        }
+    }
+}
+.user-name{
+    width: 100%;
+    h2{
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+        text-align: left;
+        color: $text2;
+        padding-bottom: 72px;
+    }
+    .user-card{
+        display: flex;
+        gap: 30px;
+        @include flex;
+    }
+    .card-bg{
+        max-width: 605px;
+        background-color: #0B7572;
+        padding-left: 51px;
+        border-radius: 10px;
+        margin-top: 24px;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.124);
+    }
+    .text5{
+        margin-right: 189px;
+    }
+    .card-u{
+        background-color: white;
+        padding-top: 32px;
+        padding-bottom: 41px; 
+        padding-left: 32px;
+        display: flex;
+        align-items: center;
+        gap: 40px ;
+        border-radius: 0 10px  10px 0;
+    }
+    h4{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+        color: $text2; 
+        // padding-right: 189px;       
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+        color: $text;
+        margin-top: 12px;
+    }
+    .icon{
+        margin-top: 32px;
+        display: flex;
+        gap: 20px;
+    }
+}
+.kontak{
+    width: 100%;
+    h2{
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+        text-align: left;
+        color: $text2;
+        margin-top: 120px;
+    }
+    .kon-left{
+        margin-top: 90px;
+        gap: 198px;
+        // justify-content: space-between;
+        @include flex;
+    }
+    .ul1{
+        list-style: none;
+        .li{
+            display: flex;
+            align-items: center;
+            gap: 36px;
+            margin-top: 44px;
+            // margin-top: 1;
+        }
+        .hj{
+            display: block;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-align: left;
+            color: $text;
+        }
+        h6{
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+            color: $text2;
+            margin-top: 8px;
+        }        
+    }
+    .ul2{
+        list-style: none;
+        margin-top: 14px;
+        padding-left: 48px;
+
+        li{
+            gap: 56px;
+            display: flex;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+            margin-top: 35px;
+        }
+        .br{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+        }
+        p{
+            width: 175px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            color: $text;
+        }
+        h5{
+            width: 443px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            text-align: left;
+            color: $text2;
+        }
+    }
+}
+.yutuber{
+    margin-top: 46px;
+}
+.fotter{
+    width: 100%;
+    background-color: #0B7572;
+    margin-top: 166px;
+    padding-top: 60px;
+    .fot{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        h1{
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 90px;
+            letter-spacing: 0.16em;
+            text-align: left;
+            color: white;
+        }
+        ul{
+            list-style: none;
+            color: white;
+            margin-top: 21px;
+        }
+        .fot-ul{
+            margin-left: 134px;
+            display: inline-block;
+            gap: 35px;
+        }
+         li{
+            margin-top: 25px;
+        }
+        .icon-img2{
+            display: flex;
+            gap: 14px;
+        }
+        .links{
+            margin-top: 30px;
+        }
+        .img-c{
+            width: 27px;
+            height: 27px;
+            border: 1px solid white;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        h4{
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 19.5px;
+            text-align: left;
+            color: white;
+            margin-top: 32px;
+        }
+        .btn-fot{
+            margin-top: 32px;
+            padding: 7px 11px;
+            background-color: #FF9619;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 19.5px;
+            text-align: left;
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+ 
+
+@media screen and (max-width: 1185px){
+    .table-text .table-texts {
+        gap: 20px;
+    }
+    .table-text .table-texts .table {
+        max-width: 680px;
+    }
+    .table-text .table-texts h2{
+        font-size: 44px;
+    }
+    .user-name .user-card {
+        display: flex;
+        /* gap: 30px; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .my-content{
+        max-width: 690px;
+    }
+    .head{
+        flex-wrap: wrap;
+        // margin: auto;
+    }
+    .image{
+        justify-content: center;
+        width: 100%;
+        padding: 0 20px;
+        .d{
+            display: block;
+            width: 100%;
+        }
+        .d2{
+            display: none;
+        }
+    }
+    .text-card{
+        justify-content: center;
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+    .hover-text{
+        width: 100%;
+        margin: auto;
+        .button{
+            display: block;
+            text-align: center;
+        }
+    }
+    .card-div{
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+        box-shadow: none;
+        .card-on{
+            max-width: 100%;
+            margin: 0;
+            border: 1px solid #D7D7DD;
+            @include flex;
+            gap: 32px;
+            padding-right: 140px;
+            padding-top: 32px;
+            padding-left: 32px;
+            padding-bottom: 40px;
+            border-radius: 20px;
+            margin-top: 16px;
+        }
+    }
+    .bg-cards{
+        margin-top: 67px;
+    }
+    .bg-imgs{
+        padding: 0;
+        img{
+            max-width: 550px;
+        }
+        .bg-imgs .h2cl{
+            max-width: 288px;
+            position: absolute;
+            text-align: left;   
+            font-size: 24px;         
+            color: rgb(147, 27, 27);
+            margin: 0;
+        }
+    }
+    .bg-c{
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        .card-left{
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+            margin-top: 48px;
+        }
+    }
+    .trak-cards{
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+        padding: 0;
+        gap: 10px;
+        .trak-card-card{
+            display: block;
+            width: 50%;
+            margin: auto;
+        }
+        .trak-card-card .bmw{
+            display: none;
+        }
+        .trak-card-card .tr{
+            display: block;
+        }
+        .none{
+            display: none;
+        }
+    }
+    .table-texts{
+        display: block;
+        flex-wrap: wrap;
+        padding: 0;
+        .text-table{
+            width: 500px;
+            width: 100%;
+            padding: 0;
+            justify-content: center;
+            margin: auto;
+        }
+        .tb{
+            justify-content: center;
+            margin: auto;
+            max-width: 500px;
+            // background-color: #FF9619;
+        }
+        .tb p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18.9px;
+            text-align: left;
+
+        }
+    }
+    .card-st .imgnone{
+        display: none;
+    }
+    .logo-d .logo-top{
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        padding: 0;
+        // display: flex;
+
+    }
+    .logo-top .logo-div{
+        max-width: 184px;
+        justify-content: center;
+    }
+    .kontak .kon-left{
+        display: block;
+        flex-wrap: wrap;
+    }
+    .fot{
+        display: block;
+        flex-wrap: wrap;
+    }
+    .user-card{
+        display: block;
+        flex-wrap: wrap;
+        // margin: auto;
+        justify-content: center;
+        .user-left{
+            display: block;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .user-name .text5{
+        margin-right: 109px;
+    }
+    .user-name .user-left .none5{
+        display: none;
+    }
+    .table-text .table-texts .table {
+        background-color: white;
+        /* margin-right: 66px; */
+        border-radius: 8px;
+        /* padding: 28px 40px; */
+    }
+    .table-text .table-texts li {
+        padding: 15px 5px;
+    }
+    .table-text .table-texts .logo-nav {
+        gap: 134px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .my-content{
+        max-width: 345px;
+    }
+    .text-card{
+        justify-content: center;
+        h2{
+            text-align: left;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 35px;
+        }
+        p{
+            text-align: left;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 22.5px;
+            
+        }
+    }
+    .image{
+        justify-content: center;
+        width: 100%;
+        padding: 0 10px;
+        .d{
+            display: block;
+            width: 100%;
+        }
+        .d2{
+            display: none;
+        }
+    }
+    .hover-text{
+        width: auto;
+        margin: 0;
+    }
+    .card-div{
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0px 10px;
+        justify-content: center;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.075);
+        .card-on{
+            max-width: 100%;
+            margin: 0;
+            border: none;
+            display: block;
+            padding-right: 10px;
+            padding-top: 22px;
+            padding-left: 32px;
+            padding-bottom: 40px;
+            border-radius: 20px;
+            margin-top: 0px;
+        }
+    }
+    .bg-c .card-left{
+        width: 100%;
+        padding: 0;
+        .card-img-text{
+            width: 100%;
+            padding: 0;
+            align-items: normal;
+            gap: 16px;
+        }
+        .card-img-text .img-c{
+            width: 52px;
+            height: 52px;
+            padding: 9px 12px;
+        }
+        .card-img-text .img-c img{
+            width: 28px;
+        }
+        .card-img-text .h4-plo h4{
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24.3px;
+            text-align: left;
+        }
+        .card-img-text .h4-plo p{            
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 22.5px;
+            text-align: left;
+        }
+    }
+    .bg-cards .h2za{
+        display: block;
+        padding-left: 10px;
+    }
+    .bg-imgs{
+        display: none;
+    }
+    .trak-cards .none2{
+        display: none;
+    }
+    .trak-card-card .bmw{
+        display: block;
+    }
+    .trak-card-card .tr{
+        display: none;
+    }
+    .steps-card .card-st{
+        padding: 10px;
+    }
+    .card-st h4{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22.5px;
+        text-align: left;
+
+    }
+    .card-st p{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22.5px;
+        text-align: left;
+
+    }
+    .table-text .table-texts .logo-nav {
+        gap: 104px;
+    }
+    .table-text .table-texts .tb tr {
+        display: none;
+    }
+}
